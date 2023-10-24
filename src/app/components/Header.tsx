@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <motion.div
-        className="fixed z-10 top-0 w-full px-[20px] h-[90px] flex items-center justify-between"
+        className="fixed bg-black bg-opacity-50 backdrop-filter backdrop-blur-3xl z-10 top-0 w-full px-[20px] h-[90px] flex items-center justify-between"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -18,7 +18,6 @@ const Header = () => {
       >
         <div className="h-full flex items-center">
           <Image
-            className="bg-black"
             src="/my-logo.png"
             alt={`Ian's Logo`}
             width={70}
