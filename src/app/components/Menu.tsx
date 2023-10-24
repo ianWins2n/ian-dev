@@ -37,7 +37,7 @@ const Menu = () => {
           isOpen ? `w-[min(75vw,400px)] opacity-100 ` : ""
         } h-screen bg-zinc-950 z-10`}
       >
-        <ol className="h-full flex justify-center items-center flex-col list-decimal">
+        <ol className="h-full  flex justify-center items-center flex-col list-decimal">
           <li className="m-0">About</li>
           <li className="m-0">Work</li>
           <li className="m-0">Contact</li>
