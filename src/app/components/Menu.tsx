@@ -42,7 +42,7 @@ const Menu = () => {
         } h-screen z-40 bg-black`}
       >
         <ol className="h-full  flex justify-center items-center flex-col list-decimal">
-          <a href="#About">
+          <a href="#About" onClick={() => setIsOpen(!isOpen)}>
             <li className="m-0">About</li>
           </a>
           <li className="m-0">Work</li>
