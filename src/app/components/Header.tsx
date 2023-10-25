@@ -2,12 +2,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Menu from "./Menu";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <>
       <motion.div
-        className="fixed bg-black bg-opacity-50 backdrop-filter backdrop-blur-3xl z-10 top-0 w-full px-[20px] h-[90px] flex items-center justify-between"
+        className="fixed bg-black bg-opacity-50 backdrop-filter backdrop-blur-3xl z-10 top-0 w-full px-8 h-20 flex items-center justify-between"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -17,16 +18,20 @@ const Header = () => {
         }}
       >
         <div className="h-full flex items-center">
-          <Image
-            src="/my-logo.png"
-            alt={`Ian's Logo`}
-            width={70}
-            height={70}
-          />
+          <a href="/">
+            <Image
+              src="/my-logo.png"
+              alt={`Ian's Logo`}
+              width={70}
+              height={70}
+            />
+          </a>
         </div>
         <div className="hidden sm:flex shrink-0 font-mono">
           <ol className="flex h-full list-decimal space-x-20">
-            <li>About</li>
+            <a href="#About">
+              <li>About</li>
+            </a>
             <li>Work</li>
             <li>Contact</li>
           </ol>

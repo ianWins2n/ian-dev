@@ -21,10 +21,8 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={inter.className}>
         <Providers>
-      <Loader />
-
+          <Loader />
           <Header />
-
           {children}
         </Providers>
       </body>

@@ -1,14 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.className = isOpen ? "blurz" : "";
+  }, [isOpen]);
 
   return (
     <>
       {/* :SMALL BURGER ICON */}
       <button
-        className="z-30 sm:hidden w-6 h-6 border border-none outline-none focus:outline-none"
+        className="z-50 sm:hidden w-6 h-6 border  border-none outline-none focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="relative block">
@@ -33,12 +37,14 @@ const Menu = () => {
         </span>
       </button>
       <div
-        className={`fixed top-0 opacity-0 sm:hidden bottom-0 right-0 transition-all w-0 ${
+        className={`fixed top-0 opacity-0 sm:hidden bottom-0 right-0 duration-300 w-0 ${
           isOpen ? `w-[min(75vw,400px)] opacity-100 ` : ""
-        } h-screen bg-zinc-950 z-10`}
+        } h-screen z-40 bg-black`}
       >
         <ol className="h-full  flex justify-center items-center flex-col list-decimal">
-          <li className="m-0">About</li>
+          <a href="#About">
+            <li className="m-0">About</li>
+          </a>
           <li className="m-0">Work</li>
           <li className="m-0">Contact</li>
         </ol>

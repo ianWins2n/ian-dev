@@ -10,8 +10,7 @@ const Loader = () => {
         initial={{ opacity: 1 }}
         animate={{ opacity: 0, scale: 0 }}
         transition={{
-          ease: "anticipate",
-          duration: 0.5,
+          duration: 0.2,
           delay: 1,
         }}
       >

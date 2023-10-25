@@ -1,11 +1,77 @@
+"use client";
+
+import { useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
+
 const About = () => {
+  const ref = useRef(null);
+  const isInview = useInView(ref, { once: true });
+
+  const skills = [
+    "Typescript",
+    "Javascript (ES6+)",
+    "Next.js",
+    "React",
+    "React Native",
+    "Node.js",
+  ];
+  useEffect(() => {
+    console.log(isInview);
+  }, [isInview]);
   return (
     <>
-      <div className="flex mx-auto my-0 flex-col justify-center min-h-screen w-screen">
-        <div className="flex whitespace-nowrap items-center">
-        <h2 className="">About Me</h2>
-        <div className="w-full h-[1px] ml-2 bg-white"></div>
+      <div
+        id="About"
+        className={`About flex mx-auto my-0 py-14 flex-col min-h-screen w-full`}
+      >
+        <div
+          className={`opacity-0 translate-y-10 duration-1000 delay-500 ${
+            isInview ? "opacity-100 translate-y-0" : ""
+          } flex whitespace-nowrap items-center pb-12`}
+        >
+          <h2 className="before:content-['01.'] before:font-mono before:text-gray-500 before:text-xl text-2xl font-medium">
+            {" "}
+            About Me
+          </h2>
+          <div className="w-full h-[1px] ml-2 bg-gray-600" />
         </div>
+        <div
+          ref={ref}
+          className={`text-gray-400 translate-y-10 opacity-0 duration-1000 delay-700  ease-in-out ${
+            isInview ? "opacity-100 translate-y-0" : ""
+          } `}
+        >
+          <p>
+            Hello! I&apos;m Ian, a Software Developer based in The Philippines.
+          </p>
+          <p>
+            I enjoy creating beautiful and reliable applications for internet
+            and phones.
+            <br />
+            My goal is to always build scalable products and performant
+            experiences.
+          </p>
+          <br />
+          <p>
+            Here are a few technologies I&apos;ve been working with recently:
+          </p>
+        </div>
+
+        <ul
+          className={` opacity-0 translate-y-10 duration-1000 delay-1000 ease-in-out ${
+            isInview ? "opacity-100  translate-y-0" : ""
+          } mt-5 grid grid-cols-2 md:grid-cols-3`}
+        >
+          {skills &&
+            skills.map((skill) => (
+              <li
+                key={skill}
+                className="before:content-['▹'] before:text-gray-400 before:mr-2 before:text-sm"
+              >
+                {skill}
+              </li>
+            ))}
+        </ul>
       </div>
     </>
   );
