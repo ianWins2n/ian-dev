@@ -25,7 +25,8 @@ const About = () => {
         className={`About flex mx-auto my-0 py-14 flex-col min-h-screen w-full`}
       >
         <div
-          className={`opacity-0 translate-y-10 duration-1000 delay-500 ${
+        ref={ref}
+          className={`opacity-0 translate-y-10 duration-1000 delay-200 ${
             isInview ? "opacity-100 translate-y-0" : ""
           } flex whitespace-nowrap items-center pb-12`}
         >
@@ -36,8 +37,8 @@ const About = () => {
           <div className="w-full h-[1px] ml-2 bg-gray-600" />
         </div>
         <div
-          ref={ref}
-          className={`text-gray-400 translate-y-10 opacity-0 duration-1000 delay-700  ease-in-out ${
+          
+          className={`text-gray-400 translate-y-10 opacity-0 duration-1000 delay-300  ease-in-out ${
             isInview ? "opacity-100 translate-y-0" : ""
           } `}
         >
@@ -58,7 +59,7 @@ const About = () => {
         </div>
 
         <ul
-          className={` opacity-0 translate-y-10 duration-1000 delay-1000 ease-in-out ${
+          className={` opacity-0 translate-y-10 duration-1000 delay-300 ease-in-out ${
             isInview ? "opacity-100  translate-y-0" : ""
           } mt-5 grid grid-cols-2 md:grid-cols-3`}
         >

@@ -7,8 +7,8 @@ import Link from "next/link";
 const Header = () => {
   return (
     <>
-      <motion.div
-        className="fixed bg-black bg-opacity-50 backdrop-filter backdrop-blur-3xl z-10 top-0 w-full px-8 h-20 flex items-center justify-between"
+      <motion.header
+        className="fixed bg-black bg-opacity-30 backdrop-blur-2xl z-10 top-0 w-full px-8 h-20 flex items-center justify-between"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -37,7 +37,7 @@ const Header = () => {
           </ol>
         </div>
         <Menu />
-      </motion.div>
+      </motion.header>
     </>
   );
 };
