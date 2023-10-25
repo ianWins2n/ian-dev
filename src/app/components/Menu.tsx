@@ -9,19 +9,17 @@ const Menu = () => {
   useEffect(() => {
     document.body.className = isOpen ? "overflow-hidden" : "";
     if (isOpen) {
-      isOpen &&
-        document.getElementsByTagName("main")[0].classList.add("blur-sm");
-      isOpen &&
-        document
-          .getElementsByTagName("header")[0]
-          .classList.add("backdrop-blur-0");
+      document.getElementsByTagName("main")[0].classList.add("blur-sm");
+      document
+        .getElementsByTagName("header")[0]
+        .classList.remove("backdrop-blur-2xl");
     }
 
     if (!isOpen) {
       document.getElementsByTagName("main")[0].classList.remove("blur-sm");
       document
         .getElementsByTagName("header")[0]
-        .classList.remove("backdrop-blur-0");
+        .classList.add("backdrop-blur-2xl");
     }
   }, [isOpen]);
 
@@ -55,7 +53,7 @@ const Menu = () => {
       </button>
       <div
         className={`fixed top-0 opacity-0 sm:hidden bottom-0 right-0 duration-300 w-0 ${
-          isOpen ? `w-[min(75vw,300px)] opacity-100 ` : ""
+          isOpen ? `w-[min(75vw,400px)] opacity-100 ` : ""
         } h-screen z-40 bg-black`}
       >
         <ol className="h-full list-inside flex justify-center text-start flex-col list-decimal">
