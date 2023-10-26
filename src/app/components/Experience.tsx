@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <div
       id="Experience"
-      className={`flex mx-auto my-0 py-14 flex-col min-h-screen w-full`}
+      className={`flex mx-auto my-0 py-24 flex-col min-h-screen w-full`}
     >
       <div
         ref={ref}
