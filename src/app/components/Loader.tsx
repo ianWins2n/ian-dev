@@ -6,7 +6,7 @@ const Loader = () => {
   return (
     <>
       <motion.div
-        className="flex z-10 fixed bg-black mb-10 items-center justify-center h-screen w-screen"
+        className="flex z-50 fixed bg-black mb-10 items-center justify-center h-screen w-screen"
         initial={{ opacity: 1 }}
         animate={{ opacity: 0, scale: 0 }}
         transition={{

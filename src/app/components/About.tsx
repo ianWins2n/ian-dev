@@ -15,20 +15,18 @@ const About = () => {
     "React Native",
     "Node.js",
   ];
-  useEffect(() => {
-    console.log(isInview);
-  }, [isInview]);
+
   return (
     <>
       <div
         id="About"
-        className={`About flex mx-auto my-0 py-14 flex-col min-h-screen w-full`}
+        className={`flex mx-auto my-0 py-14 flex-col min-h-screen w-full`}
       >
         <div
         ref={ref}
-          className={`opacity-0 translate-y-10 duration-1000 delay-200 ${
-            isInview ? "opacity-100 translate-y-0" : ""
-          } flex whitespace-nowrap items-center pb-12`}
+          className={`opacity-0 transition-all duration-1000 delay-200 ${
+            isInview ? " opacity-100 " : ""
+          } flex whitespace-nowrap items-center`}
         >
           <h2 className="before:content-['01.'] before:font-mono before:text-gray-500 before:text-xl text-2xl font-medium">
             {" "}

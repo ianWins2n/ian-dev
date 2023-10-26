@@ -52,24 +52,24 @@ const Menu = () => {
         </span>
       </button>
       <div
-        className={`fixed top-0 opacity-0 sm:hidden bottom-0 right-0 duration-300 w-0 ${
+        className={`fixed top-0 opacity-0 sm:hidden bottom-0 right-0 duration-500 w-0 ${
           isOpen ? `w-[min(75vw,400px)] opacity-100 ` : ""
         } h-screen z-40 bg-black`}
       >
         <ol className="h-full list-inside flex justify-center text-start flex-col list-decimal">
           <a href="#About" onClick={toggleMenu}>
             <li className="mx-[28%] whitespace-nowrap text-2xl font-mono mb-3 text-gray-500">
-              <span className="text-white font-sans">About</span>
+              <span className="text-white font-sans hover:text-gray-500">About</span>
             </li>
           </a>
-          <a href="#Work" onClick={toggleMenu}>
+          <a href="#Experience" onClick={toggleMenu}>
             <li className="mx-[28%] whitespace-nowrap text-2xl font-mono mb-3 text-gray-500">
-              <span className="text-white font-sans">Work</span>
+              <span className="text-white font-sans hover:text-gray-500">Experience</span>
             </li>
           </a>
           <a href="#Contact" onClick={toggleMenu}>
             <li className="mx-[28%] whitespace-nowrap text-2xl font-mono mb-3 text-gray-500">
-              <span className="text-white font-sans">Contact</span>
+              <span className="text-white font-sans hover:text-gray-500">Contact</span>
             </li>
           </a>
         </ol>
