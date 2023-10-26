@@ -54,7 +54,7 @@ const Menu = () => {
       <div
         className={`fixed top-0 opacity-0 sm:hidden bottom-0 right-0 duration-500 w-0 ${
           isOpen ? `w-[min(75vw,400px)] opacity-100 ` : ""
-        } h-screen z-40 bg-black`}
+        } h-screen z-40 bg-neutral-950`}
       >
         <ol className="h-full list-inside flex justify-center text-start flex-col list-decimal">
           <a href="#About" onClick={toggleMenu}>
