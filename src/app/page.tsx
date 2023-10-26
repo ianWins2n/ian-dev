@@ -4,7 +4,7 @@ import Experience from "./components/Experience";
 
 export default async function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center px-12">
+    <main className="flex min-h-screen flex-col items-center justify-center px-6">
       <Hero />
       <About />
       <Experience />
