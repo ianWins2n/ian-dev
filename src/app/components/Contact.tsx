@@ -9,13 +9,13 @@ const Contact = () => {
       >
         <h2 className="before:content-['02.'] font-mono before:font-mono before:text-neutral-500 text-neutral-500 before:text-sm text-sm font-medium">
           {" "}
-          What's Next?
+          What&apos;s Next?
         </h2>
         <h2 className="mt-6 mb-3 text-4xl">Get in touch</h2>
         <p className="max-w-xl mb-12 text-center text-neutral-400">
-          Although I'm not currently looking for any new opportunities, my inbox
+          Although I&apos;m not currently looking for any new opportunities, my inbox
           is always open. Whether you have a question or just want to say hi,
-          I'll try my best to get back to you!
+          I&apos;ll try my best to get back to you!
         </p>
         <ContactButton text="Say Hello" />
       </div>
