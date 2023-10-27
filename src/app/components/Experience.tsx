@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <div
       id="Experience"
-      className={`flex mx-auto my-0 py-24 flex-col min-h-screen w-full`}
+      className={`flex mx-auto my-0 py-24 flex-col min-h-screen max-w-5xl w-full`}
     >
       <div
         ref={ref}
@@ -18,11 +18,11 @@ const Experience = () => {
           isInview ? "opacity-100" : ""
         } flex whitespace-nowrap items-center pb-12`}
       >
-        <h2 className="before:content-['02.'] before:font-mono before:text-gray-500 before:text-xl text-2xl font-medium">
+        <h2 className="before:content-['02.'] before:font-mono before:text-neutral-500 before:text-xl text-2xl font-medium">
           {" "}
           Experience
         </h2>
-        <div className="w-full h-[1px] ml-2 bg-gray-600" />
+        <div className="w-full sm:max-w-xs h-[1px] ml-2 bg-neutral-600" />
       </div>
       <div
         className={`opacity-0 duration-1000 delay-200 ${
@@ -32,7 +32,7 @@ const Experience = () => {
         <div className="col-[1/-1] sm:col-[1/8] row-[1/2] transition-all ease-in duration-500 z-20 p-10">
           <div className="text-neutral-500">Featured Project</div>
           <h3 className="text-3xl">Project Name</h3>
-          <div className="sm:bg-neutral-800 rounded-xl sm:p-3 my-8">
+          <div className="my-8 sm:bg-neutral-800 rounded-xl sm:p-3">
             <p className="text-neutral-400">
               A web app for visualizing personalized Spotify data. View your top
               artists, top tracks, recently played tracks, and detailed audio
@@ -54,7 +54,7 @@ const Experience = () => {
             width={0}
             height={0}
             sizes="100vw"
-            className="w-full h-full object-cover opacity-20  sm:opacity-100"
+            className="object-cover w-full h-full opacity-20 sm:opacity-100"
           ></Image>
         </div>
 

@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
       <motion.header
-        className="fixed bg-black bg-opacity-30 backdrop-blur-2xl z-10 top-0 w-full px-6 h-20 flex items-center justify-between"
+        className="fixed bg-black bg-opacity-30 backdrop-blur-2xl z-50 top-0 w-full px-6 h-20 flex items-center justify-between"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{

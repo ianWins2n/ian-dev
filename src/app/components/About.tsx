@@ -20,7 +20,7 @@ const About = () => {
     <>
       <div
         id="About"
-        className={`flex mx-auto my-0 py-24 flex-col min-h-screen w-full`}
+        className={`flex mx-auto my-0 py-24 flex-col min-h-screen max-w-5xl w-full`}
       >
         <div
         ref={ref}
@@ -28,15 +28,15 @@ const About = () => {
             isInview ? " opacity-100 " : ""
           } flex whitespace-nowrap items-center`}
         >
-          <h2 className="before:content-['01.'] before:font-mono before:text-gray-500 before:text-xl text-2xl font-medium">
+          <h2 className="before:content-['01.'] before:font-mono before:text-neutral-500 before:text-xl text-2xl font-medium">
             {" "}
             About Me
           </h2>
-          <div className="w-full h-[1px] ml-2 bg-gray-600" />
+          <div className="w-full sm:max-w-xs h-[1px] ml-2 bg-neutral-600" />
         </div>
         <div
           
-          className={`text-gray-400 translate-y-10 opacity-0 duration-1000 delay-300  ease-in-out ${
+          className={`text-neutral-400 translate-y-10 opacity-0 duration-1000 delay-300  ease-in-out ${
             isInview ? "opacity-100 translate-y-0" : ""
           } `}
         >
@@ -65,7 +65,7 @@ const About = () => {
             skills.map((skill) => (
               <li
                 key={skill}
-                className="before:content-['▹'] before:text-gray-400 before:mr-2 before:text-sm"
+                className="before:content-['▹'] before:text-neutral-400 before:mr-2 before:text-sm"
               >
                 {skill}
               </li>

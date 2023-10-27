@@ -27,7 +27,7 @@ const Menu = () => {
     <>
       {/* :SMALL BURGER ICON */}
       <button
-        className="z-50 sm:hidden w-6 h-6 border border-none outline-none focus:outline-none"
+        className="z-50 w-6 h-6 border border-none outline-none sm:hidden focus:outline-none"
         onClick={toggleMenu}
       >
         <span className="relative block">
@@ -56,20 +56,20 @@ const Menu = () => {
           isOpen ? `w-[min(75vw,400px)] opacity-100 ` : ""
         } h-screen z-40 bg-neutral-950`}
       >
-        <ol className="h-full list-inside flex justify-center text-start flex-col list-decimal">
+        <ol className="flex flex-col justify-center h-full list-decimal list-inside text-start">
           <a href="#About" onClick={toggleMenu}>
-            <li className="mx-[28%] whitespace-nowrap text-2xl font-mono mb-3 text-gray-500">
-              <span className="text-white font-sans hover:text-gray-500">About</span>
+            <li className="mx-[28%] whitespace-nowrap text-2xl font-mono mb-3 text-neutral-500">
+              <span className="font-sans text-white hover:text-neutral-500">About</span>
             </li>
           </a>
           <a href="#Experience" onClick={toggleMenu}>
-            <li className="mx-[28%] whitespace-nowrap text-2xl font-mono mb-3 text-gray-500">
-              <span className="text-white font-sans hover:text-gray-500">Experience</span>
+            <li className="mx-[28%] whitespace-nowrap text-2xl font-mono mb-3 text-neutral-500">
+              <span className="font-sans text-white hover:text-neutral-500">Experience</span>
             </li>
           </a>
           <a href="#Contact" onClick={toggleMenu}>
-            <li className="mx-[28%] whitespace-nowrap text-2xl font-mono mb-3 text-gray-500">
-              <span className="text-white font-sans hover:text-gray-500">Contact</span>
+            <li className="mx-[28%] whitespace-nowrap text-2xl font-mono mb-3 text-neutral-500">
+              <span className="font-sans text-white hover:text-neutral-500">Contact</span>
             </li>
           </a>
         </ol>

@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 export default async function Home() {
   return (
@@ -8,6 +9,7 @@ export default async function Home() {
       <Hero />
       <About />
       <Experience />
+      <Contact />
     </main>
   );
 }
