@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
       <motion.header
-        className="fixed bg-black bg-opacity-30 backdrop-blur-2xl z-50 top-0 w-full px-6 h-20 flex items-center justify-between"
+        className="fixed top-0 z-50 flex items-center justify-between w-full h-20 px-6 bg-black bg-opacity-30 backdrop-blur-2xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -17,7 +17,7 @@ const Header = () => {
           delay: 1.3,
         }}
       >
-        <div className="h-full flex items-center">
+        <div className="flex items-center h-full">
           <a href="/">
             <Image
               src="/my-logo.png"
@@ -27,16 +27,16 @@ const Header = () => {
             />
           </a>
         </div>
-        <div className="hidden sm:flex shrink-0 font-mono">
-          <ol className="flex h-full list-decimal space-x-20">
+        <div className="hidden font-mono sm:flex shrink-0">
+          <ol className="flex h-full space-x-10 list-none">
             <a href="#About">
-              <li>About</li>
+              <li className="before:content-['01.'] hover:text-neutral-400 before:text-neutral-400" > About</li>
             </a>
             <a href="#Experience">
-              <li>Experience</li>
+              <li className="before:content-['02.'] hover:text-neutral-400 before:text-neutral-400" >Experience</li>
             </a>
             <a href="#Contact">
-              <li>Contact</li>
+              <li className="before:content-['03.'] hover:text-neutral-400 before:text-neutral-400">Contact</li>
             </a>
           </ol>
         </div>

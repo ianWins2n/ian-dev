@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col justify-center w-full max-w-5xl min-h-screen">
       <motion.div
-        className="font-mono  text-neutral-500"
+        className="font-mono text-gray-500"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -42,7 +42,7 @@ const Hero = () => {
           delay: 2.2,
         }}
       >
-        <h1 className="font-semibold leading-[1.1] text-neutral-500 text-[clamp(40px,8vw,80px)]">
+        <h1 className="font-semibold leading-[1.1] text-gray-500 text-[clamp(40px,8vw,80px)]">
           I build web and mobile apps.
         </h1>
       </motion.div>
@@ -56,7 +56,7 @@ const Hero = () => {
           delay: 2.4,
         }}
       >
-        <p className="text-neutral-300 max-w-[545px]">
+        <p className="text-gray-300 max-w-[545px]">
           I&apos;m a software developer based in the Philippines, specializing
           in building websites and mobile applications, and everything in
           between.
