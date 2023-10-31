@@ -32,7 +32,7 @@ const Experience = () => {
         <div className="col-[1/-1] sm:col-[1/8] row-[1/2] transition-all ease-in duration-500 z-20 p-10">
           <div className="text-neutral-500">Featured Project</div>
           <h3 className="text-3xl">Project Name</h3>
-          <div className="my-8 sm:bg-neutral-800 rounded-xl sm:p-3">
+          <div className="my-8 sm:bg-neutral-800 rounded-md sm:p-3">
             <p className="text-neutral-400">
               A web app for visualizing personalized Spotify data. View your top
               artists, top tracks, recently played tracks, and detailed audio
@@ -47,14 +47,14 @@ const Experience = () => {
             <li>Jsx</li>
           </ul>
         </div>
-        <div className="col-[1/-1] sm:col-[3/-1] row-[1/2] flex items-end transition-all justify-start bg-zinc-950 z-10">
+        <div className="col-[1/-1] sm:col-[5/-1] row-[1/2] items-center flex transition-all z-10">
           <Image
             src="/streamer.png"
             alt="streamer"
             width={0}
             height={0}
-            sizes="100vw"
-            className="object-cover w-full h-full opacity-20 sm:opacity-100"
+            sizes="50vw"
+            className="object-cover w-full opacity-20 sm:opacity-100"
           ></Image>
         </div>
 
