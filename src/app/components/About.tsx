@@ -2,6 +2,7 @@
 
 import { useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const About = () => {
   const ref = useRef(null);
@@ -23,7 +24,7 @@ const About = () => {
         className={`flex mx-auto my-0 py-24 flex-col min-h-screen max-w-5xl w-full`}
       >
         <div
-        ref={ref}
+          ref={ref}
           className={`opacity-0 transition-all duration-1000 delay-200 ${
             isInview ? " opacity-100 " : ""
           } flex whitespace-nowrap items-center`}
@@ -35,25 +36,36 @@ const About = () => {
           <div className="w-full sm:max-w-xs h-[1px] ml-2 bg-neutral-600" />
         </div>
         <div
-          
-          className={`text-neutral-400 translate-y-10 opacity-0 duration-1000 delay-300  ease-in-out ${
+          className={`flex h-auto text-neutral-400 translate-y-10 opacity-0 duration-1000 delay-300  ease-in-out ${
             isInview ? "opacity-100 translate-y-0" : ""
           } `}
         >
-          <p>
-            Hello! I&apos;m Ian, a Software Developer based in The Philippines.
-          </p>
-          <p>
-            I enjoy creating beautiful and reliable applications for internet
-            and phones.
+          <div className="w-full">
+            <p>
+              Hello! I&apos;m Ian, a Software Developer based in The
+              Philippines.
+            </p>
+            <p>
+              I enjoy creating beautiful and reliable applications for internet
+              and phones.
+              <br />
+              My goal is to always build scalable products and performant
+              experiences.
+            </p>
             <br />
-            My goal is to always build scalable products and performant
-            experiences.
-          </p>
-          <br />
-          <p>
-            Here are a few technologies I&apos;ve been working with recently:
-          </p>
+            <p>
+              Here are a few technologies I&apos;ve been working with recently:
+            </p>
+          </div>
+          <div className="hidden sm:flex justify-center w-4/5">
+            <Image
+              src="/my-pic.jpeg"
+              alt="Dev-picture"
+              width={700}
+              height={700}
+              className="mx-10 rounded-lg h-auto max-w-full hover:scale-105 transition-all"
+            />
+          </div>
         </div>
 
         <ul
@@ -71,6 +83,15 @@ const About = () => {
               </li>
             ))}
         </ul>
+        <div className="flex sm:hidden justify-center translate-y-20 ">
+            <Image
+              src="/my-pic.jpeg"
+              alt="Dev-picture"
+              width={400}
+              height={200}
+              className="mx-10 rounded-lg h-auto max-w-full hover:scale-105 transition-all"
+            />
+          </div>
       </div>
     </>
   );

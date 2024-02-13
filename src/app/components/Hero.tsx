@@ -5,7 +5,7 @@ import ContactButton from "./ContactButton";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center w-full max-w-5xl min-h-screen">
+    <div className="flex flex-col justify-center w-full max-w-4xl min-h-screen">
       <motion.div
         className="font-mono text-gray-500"
         initial={{ opacity: 0 }}

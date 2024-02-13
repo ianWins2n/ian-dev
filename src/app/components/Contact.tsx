@@ -4,18 +4,17 @@ const Contact = () => {
   return (
     <>
       <div
-        id="Contact"
-        className={`flex flex-col justify-center items-center mx-auto my-0 py-24 min-h-[85vh] max-w-5xl w-full`}
+        className={`flex flex-col justify-center items-center mx-auto my-0 py-24 min-h-[80vh] max-w-7xl w-full`}
       >
-        <h2 className="before:content-['02.'] font-mono before:font-mono before:text-neutral-500 text-neutral-500 before:text-sm text-sm font-medium">
+        <h2 className="before:content-['03.'] font-mono before:font-mono before:text-neutral-500 text-neutral-500 before:text-sm text-sm font-medium">
           {" "}
           What&apos;s Next?
         </h2>
         <h2 className="mt-6 mb-3 text-4xl">Get in touch</h2>
         <p className="max-w-xl mb-12 text-center text-neutral-400">
-          Although I&apos;m not currently looking for any new opportunities, my inbox
-          is always open. Whether you have a question or just want to say hi,
-          I&apos;ll try my best to get back to you!
+          I&apos;m currently available and open to new opportunities. Feel free to
+          reach out with any inquiries or just to say hello – I&apos;ll do my best to
+          respond promptly!
         </p>
         <ContactButton text="Say Hello" />
       </div>
