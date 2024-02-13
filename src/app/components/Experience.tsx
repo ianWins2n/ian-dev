@@ -2,6 +2,7 @@
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Experience = () => {
   const ref = useRef(null);
@@ -10,7 +11,7 @@ const Experience = () => {
   return (
     <div
       id="Experience"
-      className={`flex mx-auto my-0 py-24 flex-col min-h-screen max-w-5xl w-full`}
+      className={`flex mx-auto my-0 py-24 flex-col min-h-screen max-w-7xl w-full`}
     >
       <div
         ref={ref}
@@ -29,33 +30,47 @@ const Experience = () => {
           isInview ? "opacity-100" : ""
         } grid grid-cols-[repeat(10,1fr)] w-full rounded-md bg-transparent`}
       >
-        <div className="col-[1/-1] sm:col-[1/8] row-[1/2] transition-all ease-in duration-500 z-20 p-10">
-          <div className="text-neutral-500">Featured Project</div>
-          <h3 className="text-3xl">Project Name</h3>
-          <div className="my-8 sm:bg-neutral-800 rounded-md sm:p-3">
+        <div className="col-[1/-1] sm:col-[1/7] row-[1/2] transition-all ease-in duration-500 z-20 p-10">
+          <div className="text-neutral-500 mb-3">Featured Project</div>
+          <Link
+            href="https://streamer.com.au/"
+            target={"_blank"}
+            className="text-5xl font-semibold"
+          >
+            Streamer
+          </Link>
+          <div className="my-8 sm:bg-neutral-800 rounded-md sm:p-3 sm:opacity-90 hover:opacity-100 transition-all">
             <p className="text-neutral-400">
-              A web app for visualizing personalized Spotify data. View your top
-              artists, top tracks, recently played tracks, and detailed audio
-              information about each track. Create and save new playlists of
-              recommended tracks based on your existing playlists and more.
+              <Link
+                href="https://streamer.com.au/"
+                target={"_blank"}
+                className="underline"
+              >
+                Streamer
+              </Link>{" "}
+              is Australia&apos;s premier community sport streaming platform — the
+              place to stream, share, and support local games and the iconic
+              moments of the clubs that you love to follow. Streamer puts the
+              power in the hands of the community, giving clubs the tools to
+              create and share their own unique content.
             </p>
           </div>
-          <ul className="flex gap-4">
-            <li>React</li>
+          <ul className="flex gap-4 font-mono">
+            <li>NextJs</li>
             <li>Typescript</li>
-            <li>Styled</li>
-            <li>Jsx</li>
+            <li>Tailwind</li>
           </ul>
         </div>
-        <div className="col-[1/-1] sm:col-[5/-1] row-[1/2] items-center flex transition-all z-10">
-          <Image
-            src="/streamer.png"
-            alt="streamer"
-            width={0}
-            height={0}
-            sizes="50vw"
-            className="object-cover w-full opacity-20 sm:opacity-100"
-          ></Image>
+        <div className="col-[1/-1] sm:col-[5/-1] row-[1/2] hover:scale-105 hover:shadow-2xl hover:shadow-red-700 cursor-pointer items-center flex transition-all z-10">
+          <Link href="https://streamer.com.au/" target={"_blank"}>
+            <Image
+              src="/streamer.png"
+              alt="streamer"
+              width={1000}
+              height={1000}
+              className="h-auto w-full opacity-20 sm:opacity-100 rounded-lg"
+            ></Image>
+          </Link>
         </div>
 
         <div />
