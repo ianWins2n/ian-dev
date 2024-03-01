@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Header from "./components/Header";
 import Loader from "./components/Loader";
 import Footer from "./components/Footer";
+import Particles from "./components/Particles";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>
-          <Loader />
-          <Header />
-          {children}
-          <Footer />
+        <Loader />
+        <Header />
+        {children}
+        <Footer />
+        <Particles
+          className="absolute h-[400vh] inset-0 -z-10 animate-fade-in"
+          quantity={300}
+        />
       </body>
     </html>
   );

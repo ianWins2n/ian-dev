@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Menu from "./Menu";
-import Link from "next/link";
+import Particles from "./Particles";
 
 const Header = () => {
   return (
@@ -30,17 +30,27 @@ const Header = () => {
         <div className="hidden font-mono sm:flex shrink-0">
           <ol className="flex h-full space-x-10 list-none">
             <a href="#About">
-              <li className="before:content-['01.'] hover:text-neutral-400 before:text-neutral-400" > About</li>
+              <li className="before:content-['01.'] hover:text-neutral-400 before:text-neutral-400">
+                About
+              </li>
             </a>
             <a href="#Experience">
-              <li className="before:content-['02.'] hover:text-neutral-400 before:text-neutral-400" >Experience</li>
+              <li className="before:content-['02.'] hover:text-neutral-400 before:text-neutral-400">
+                Experience
+              </li>
             </a>
             <a href="#Contact">
-              <li className="before:content-['03.'] hover:text-neutral-400 before:text-neutral-400">Contact</li>
+              <li className="before:content-['03.'] hover:text-neutral-400 before:text-neutral-400">
+                Contact
+              </li>
             </a>
           </ol>
         </div>
         <Menu />
+        <Particles
+          className="absolute inset-0 -z-10 ease-in-out duration-75"
+          quantity={30}
+        />
       </motion.header>
     </>
   );

@@ -20,8 +20,7 @@ const Experience = () => {
         } flex whitespace-nowrap items-center pb-12`}
       >
         <h2 className="before:content-['02.'] before:font-mono before:text-neutral-500 before:text-xl text-2xl font-medium">
-          {" "}
-          Experience
+          Work Experience
         </h2>
         <div className="w-full sm:max-w-xs h-[1px] ml-2 bg-neutral-600" />
       </div>
