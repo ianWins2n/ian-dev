@@ -28,6 +28,7 @@ const Menu = () => {
       {/* :SMALL BURGER ICON */}
       <button
         className="z-50 w-6 h-6 border border-none outline-none sm:hidden focus:outline-none"
+        aria-label="Hamburger Menu"
         onClick={toggleMenu}
       >
         <span className="relative block">

@@ -29,21 +29,15 @@ const Header = () => {
         </div>
         <div className="hidden font-mono sm:flex shrink-0">
           <ol className="flex h-full space-x-10 list-none">
-            <a href="#About">
-              <li className="before:content-['01.'] hover:text-neutral-400 before:text-neutral-400">
-                About
-              </li>
-            </a>
-            <a href="#Experience">
-              <li className="before:content-['02.'] hover:text-neutral-400 before:text-neutral-400">
-                Experience
-              </li>
-            </a>
-            <a href="#Contact">
-              <li className="before:content-['03.'] hover:text-neutral-400 before:text-neutral-400">
-                Contact
-              </li>
-            </a>
+            <li className="before:content-['01.'] hover:text-neutral-400 before:text-neutral-400">
+              <a href="#About">About</a>
+            </li>
+            <li className="before:content-['02.'] hover:text-neutral-400 before:text-neutral-400">
+              <a href="#Experience">Experience</a>
+            </li>
+            <li className="before:content-['03.'] hover:text-neutral-400 before:text-neutral-400">
+              <a href="#Contact">Contact</a>
+            </li>
           </ol>
         </div>
         <Menu />

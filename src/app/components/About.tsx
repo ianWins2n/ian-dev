@@ -63,7 +63,7 @@ const About = () => {
               alt="Dev-picture"
               width={700}
               height={700}
-              className="mx-10 rounded-lg h-auto max-w-full hover:scale-105 transition-all"
+              className="mx-10 aspect-[1.27] rounded-lg h-auto max-w-full hover:scale-105 transition-all"
             />
           </div>
         </div>
@@ -89,7 +89,7 @@ const About = () => {
               alt="Dev-picture"
               width={400}
               height={200}
-              className="mx-10 rounded-lg h-auto max-w-full hover:scale-105 transition-all"
+              className="mx-10 aspect-[1.27] rounded-lg h-auto max-w-full hover:scale-105 transition-all"
             />
           </div>
       </div>
