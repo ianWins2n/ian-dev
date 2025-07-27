@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Menu from "./Menu";
-import Particles from "./Particles";
 
 const Header = () => {
   return (
@@ -41,10 +40,6 @@ const Header = () => {
           </ol>
         </div>
         <Menu />
-        <Particles
-          className="absolute inset-0 -z-10 ease-in-out duration-75"
-          quantity={30}
-        />
       </motion.header>
     </>
   );
